@@ -5,3 +5,4 @@ Here are the following projects so far:
     - Blood Transfusion: Produces a boolean value for whether a blood transfusion can be done give doner and recipient blood type. 
     - Weekday: Provides what day of the week it was/is/will be give a date in the format yyyymmdd
     - Median: Gives the median of any three numbers.
+    - Recursion: A few recursive functions to learn recursion in code
