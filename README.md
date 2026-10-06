@@ -6,3 +6,5 @@ Here are the following projects so far:
     - Weekday: Provides what day of the week it was/is/will be give a date in the format yyyymmdd
     - Median: Gives the median of any three numbers.
     - Recursion: A few recursive functions to learn recursion in code
+    - rgb: Given valid rgb provides colour and does other functions
+    - robot: moves to new coordinates on 2D plane based on commands given
