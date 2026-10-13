@@ -1,10 +1,8 @@
 # Mini-Projects
 Contains a few small scale projects I have made as I learn code on DrRacket:
-Here are the following projects so far:
+Here are the following topics the code uses:
 
-    - Blood Transfusion: Produces a boolean value for whether a blood transfusion can be done give doner and recipient blood type. 
-    - Weekday: Provides what day of the week it was/is/will be give a date in the format yyyymmdd
-    - Median: Gives the median of any three numbers.
-    - Recursion: A few recursive functions to learn recursion in code
-    - rgb: Given valid rgb provides colour and does other functions
-    - robot: moves to new coordinates on 2D plane based on commands given
+- recursion on lists, linear & quadratic time efficiency: biolist.rkt, horner.rkt, curves.rkt, efficiency.rkt
+- symbols & recursion on lists: recursion.rkt, rgb.rkt, robot.rkt, list-recursion.rkt
+- booleans and conditionals: median.rkt, activation.rkt, blood.rkt, weekday.rkt
+- general functions in racket: functions.rkt
