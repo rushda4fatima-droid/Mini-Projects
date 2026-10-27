@@ -9,6 +9,10 @@
 ;; ***************************************************
 ;;
 
+;; An IntSet is a (listof Int)
+;; Requires: elements must be unique
+;; elements must be in ascending order
+
 ;;
 ;; Question 2 (a)
 ;;

@@ -9,6 +9,9 @@
 ;; ***************************************************
 ;;
 
+;; A Set is a (listof Sym)
+;; Requires: symbols must be unique
+
 ;;
 ;; Question 1 (a)
 ;;

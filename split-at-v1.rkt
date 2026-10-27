@@ -17,20 +17,20 @@
 ;; Produces a pair where the first element of the pair is a list containing the first n items from a
 ;; given list and the second element of the pair contains the remaining items of the given list.
 ;; split-at: Nat (listof Any) -> Pair
-;; Requires Nat to be less than the length of the list given.
+;; Requires Nat to be less than or equal to the length of the list given.
 (define (split-at n loa)
   (cond
     [(zero? n) (list empty loa)]
     [else (list (cons (first loa) (first (split-at (sub1 n) (rest loa))))
                 (second (split-at (sub1 n) (rest loa))))]))
 
-(check-expect (split-at 1 (list 0 1 2 3)) (list (list 0) (list 1 2 3)))
-(check-expect (split-at 2 (list 'a 'b 'c 'd)) (list (list 'a 'b) (list 'c 'd)))        
+(check-expect (split-at 1 (list 'mama 1 2 3)) (list (list 'mama) (list 1 2 3)))
+(check-expect (split-at 2 (list 'may 'i 'have 'm)) (list (list 'may 'i) (list 'have 'm)))        
 (check-expect (split-at 0 empty) (list empty empty))
 (check-expect (split-at 1 (list 'a false 'symbol 78)) (list (list 'a) (list false 'symbol 78)))
-(check-expect (split-at 4 (list 1 2 'a 'pasta false true 5)) (list (list 1 2 'a 'pasta)
-                                                                  (list false true 5)))
-(check-expect (split-at 0 (list 0 1 2 3)) (list empty (list 0 1 2 3)))
+(check-expect (split-at 4 (list 'cookie 'no 'diabeto 'roll 'back 'to 'kitchen))
+              (list (list 'cookie 'no 'diabeto 'roll) (list 'back 'to 'kitchen)))
+(check-expect (split-at 0 (list 0 false 2 '67)) (list empty (list 0 false 2 '67)))
 
 ;;
 ;; Question 3 (c)
